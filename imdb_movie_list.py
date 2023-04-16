@@ -97,7 +97,7 @@ class Movie:
         try:
             url2 = requests.get("https://imdb-api.com/en/API/Wikipedia/k_oyl14zrz/{}".format(movie_id))
             result = url2.json()
-            print(result["plotShort"]["plainText"],"\n")
+            print(textwrap.fill(result["plotShort"]["plainText"],100))
         except Exception as hata:
             print("Please enter a valid movie name from Top 250\n")
 
