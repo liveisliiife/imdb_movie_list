@@ -126,5 +126,3 @@ class Movie:
 sistem = Movie()
 while sistem.loop:
     sistem.program()
-
-api_key = "k_oyl14zrz"
